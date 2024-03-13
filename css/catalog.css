@@ -1,0 +1,118 @@
+.catalog-inner {
+    padding: 83px 0 76px;
+}
+
+.catalog-inner__group {
+    display: flex;
+    gap: 21px;
+}
+
+.catalog-inner__filter {
+    width: 500px;
+    border-right: var(--border-color);
+    padding: 0 29px 0;
+}
+
+.catalog-inner__filter-title {
+    padding-bottom: 27px;
+    font-size: 18px;
+    border-bottom: var(--border-color);
+}
+
+.catalog-inner__filter-item-title {
+    padding: 27px 0;
+}
+
+.catalog-inner__filter-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 27px;
+    gap: 14px;
+    border-bottom: var(--border-color);
+}
+
+.catalog-inner__filter-item li {
+    font-weight: 300;
+}
+
+.catalog-inner__filter-item label {
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all .4s;
+}
+
+.catalog-inner__filter-item label:hover {
+    text-shadow: 0 0 15px #000;
+    transition: all .4s;
+}
+
+.catalog-inner__products-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.catalog-inner__products-item {
+    height: 161px;
+    padding-bottom: 19px;
+    background-color: var( --background);
+    border-bottom: var(--border-color);
+    transition: all .4s;
+
+}
+
+.catalog-inner__products-item:hover {
+    height: 260px;
+    transition: all .5s;
+}
+
+.catalog-inner__products-item:hover .catalog-inner__products-btn {
+    opacity: 1;
+    transition: all .6s;
+
+}
+
+.catalog-inner__products-item:hover .catalog-inner__products-item-group {
+    opacity: 1;
+    visibility: visible;
+    transition: all .4s;
+}
+
+.catalog-inner__products-img {
+    margin-bottom: 12px;
+}
+
+.catalog-inner__products-item-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 0 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+
+}
+
+.catalog-inner__products-item-title {
+    font-size: 18px;
+}
+
+.catalog-inner__products-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-btn);
+}
+
+.catalog-inner__products-btn {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 7px 0;
+    opacity: 0;
+    transition: all .2s;
+}
+.catalog-inner__products-btn:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all .3s;
+}
