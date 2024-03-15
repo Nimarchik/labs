@@ -8,13 +8,13 @@ document.body.onload = function () {
             ads.classList.add('ads--show')
             close.addEventListener('click', () => {
                 ads.classList.remove('ads--show')
-                time = setTimeout(timeAds, 5000);
+                time = setTimeout(timeAds, 10000);
             })
             btnDeny.addEventListener('click', ()=>{
                 ads.classList.remove('ads--show')
             })
             
-        }, 1000)
+        }, 6000)
         btnAccept.addEventListener('click', ()=>{
             clearTimeout(time)
             ads.classList.remove('ads--show')
