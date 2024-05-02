@@ -76,13 +76,12 @@
 
 							<ul class="nav__group-list-icon">
 								<li>
-									<a href="#" class="nav__group-link-icon">
-										<img
-											src="../img/shop.svg"
-											alt=""
-											class="nav__group-img-icon"
-										/>
-									</a>
+									<img
+										src="../img/shop.svg"
+										alt=""
+										class="nav__group-img-icon basket-icon"
+									/>
+									<span class="countBasket">0</span>
 								</li>
 								<li>
 									<a href="#" class="nav__group-link-icon">
@@ -109,6 +108,33 @@
 			</header>
 
 			<main class="main">
+				<div class="basket-wrapper">
+					<div class="basket-main">
+						<div class="basket-header">
+							<div class="basket-header__nav">
+								<img src="../img/logo.svg" alt="" class="basket-header_img" />
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-x-circle basket__close"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+									/>
+									<path
+										d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="basket-inner">
+							<ul class="basket-inner__list"></ul>
+						</div>
+					</div>
+				</div>
 				<section class="catalog-inner">
 					<div class="container">
 						<div class="catalog-inner__group">
@@ -123,6 +149,7 @@
 											type="checkbox"
 											name=""
 											id="1"
+											data-id="1"
 											class="catalog-inner__filter-inp"
 										/>
 										<label for="1">$150 - $250</label>
@@ -132,6 +159,7 @@
 											type="checkbox"
 											name=""
 											id="2"
+											data-id="2"
 											class="catalog-inner__filter-inp"
 										/>
 										<label for="2">$250 - $350</label>
@@ -141,6 +169,7 @@
 											type="checkbox"
 											name=""
 											id="3"
+											data-id="3"
 											class="catalog-inner__filter-inp"
 										/>
 										<label for="3">$350 - $550</label>
@@ -150,6 +179,7 @@
 											type="checkbox"
 											name=""
 											id="4"
+											data-id="4"
 											class="catalog-inner__filter-inp"
 										/>
 										<label for="4">$550 - $850</label>
@@ -159,6 +189,7 @@
 											type="checkbox"
 											name=""
 											id="5"
+											data-id=""
 											class="catalog-inner__filter-inp"
 										/>
 										<label for="5">$850 - $1000</label>
@@ -168,6 +199,7 @@
 											type="checkbox"
 											name=""
 											id="6"
+											data-id=""
 											class="catalog-inner__filter-inp"
 										/>
 										<label for="6">$1000 - $2000</label>
@@ -208,7 +240,7 @@
 						</li>
 						<li class="footer__list-items">
 							<a href="" class="footer__list-item-link">
-								<img src="img/logo.svg" alt="" class="footer__logo" />
+								<img src="../img/logo.svg" alt="" class="footer__logo" />
 							</a>
 						</li>
 						<li class="footer__list-item">
@@ -225,22 +257,38 @@
 					<ul class="footer__list-icons">
 						<li class="footer__list-icons-item">
 							<a href="" class="footer__list-icons-link">
-								<img src="img/svg1.svg" alt="" class="footer__list-icons-img" />
+								<img
+									src="../img/svg1.svg"
+									alt=""
+									class="footer__list-icons-img"
+								/>
 							</a>
 						</li>
 						<li class="footer__list-icons-item">
 							<a href="" class="footer__list-icons-link">
-								<img src="img/svg2.svg" alt="" class="footer__list-icons-img" />
+								<img
+									src="../img/svg2.svg"
+									alt=""
+									class="footer__list-icons-img"
+								/>
 							</a>
 						</li>
 						<li class="footer__list-icons-item">
 							<a href="" class="footer__list-icons-link">
-								<img src="img/svg3.svg" alt="" class="footer__list-icons-img" />
+								<img
+									src="../img/svg3.svg"
+									alt=""
+									class="footer__list-icons-img"
+								/>
 							</a>
 						</li>
 						<li class="footer__list-icons-item">
 							<a href="" class="footer__list-icons-link">
-								<img src="img/svg4.svg" alt="" class="footer__list-icons-img" />
+								<img
+									src="../img/svg4.svg"
+									alt=""
+									class="footer__list-icons-img"
+								/>
 							</a>
 						</li>
 					</ul>
